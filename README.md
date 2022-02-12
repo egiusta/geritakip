@@ -1,1 +1,1 @@
-# geritakip
+# geritakip.py
