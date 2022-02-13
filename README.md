@@ -1,5 +1,6 @@
 # geritakip.py
 
+Kurulum:
 pkg install git
 
 git clone https://github.com/egiusta/geritakip
