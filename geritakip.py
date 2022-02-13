@@ -12,7 +12,7 @@ def main():
     {Style.BRIGHT + Fore.RED}  ▄▄ ▄███▄{Style.RESET_ALL}
     {Style.BRIGHT + Fore.RED}▄▀▀▀▀ ▄▄▄ ▀▀▀▀▄   {Style.BRIGHT + Fore.MAGENTA}Instagram Kitleye Göre Takipçi Bulucu{Style.RESET_ALL}
     {Style.BRIGHT + Fore.RED}█    █   █    █   {Style.BRIGHT + Fore.RED}+-----------------------------------+{Style.RESET_ALL}
-    {Style.BRIGHT + Fore.RED}█    ▀▄▄▄▀    █             {Style.BRIGHT + Fore.YELLOW}Coded by eGi // Telegram: @b4f2f{Style.RESET_ALL}
+    {Style.BRIGHT + Fore.RED}█    ▀▄▄▄▀    █             {Style.BRIGHT + Fore.YELLOW}Coded by eGi / rootbarann // Telegram: @b4f2f @splenectomy{Style.RESET_ALL}
     {Style.BRIGHT + Fore.RED}▀▄▄▄▄▄▄▄▄▄▄▄▄▄▀{Style.RESET_ALL}
 
     """
