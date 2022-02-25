@@ -136,29 +136,27 @@ def main():
 
         try:
             data = api.username_info(target_username)
-            giris = input("Kaç Kişiye Takip Atılsın")
-            n =0
+            print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}Kaç Adet Kullanıcıya Takip Atılsın?{Style.RESET_ALL}")
+            giris = input()
+            n = 0
             deger = int(giris)
             print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{deger} adet kullanıcıya takip atılacak!{Style.RESET_ALL}")
 
             for n < deger:
               n = n + 1
-              .....
+              try:
+                  tmp = user["username"]
 
-            for user in data["users"]:
-                try:
-                    tmp = user["username"]
+                  if(api.friendships_show(str(user["pk"]))["following"] == True):
+                      print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına zaten takip atıldı! Geçildi!{Style.RESET_ALL}")
+                      continue
 
-                    if(api.friendships_show(str(user["pk"]))["following"] == True):
-                        print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına zaten takip atıldı! Geçildi!{Style.RESET_ALL}")
-                        continue
-
-                    api.friendships_create(str(user["pk"]))
-                    print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına takip atıldı!{Style.RESET_ALL}")
-                except errors.ClientError as e:
-                    print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.RED}[-] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına takip atılamadı! ({e}){Style.RESET_ALL}")
-                except errors.ClientConnectionError as e:
-                    print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.RED}[-] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına takip atılamadı! Bağlantı hatası!({e}){Style.RESET_ALL}")
+                  api.friendships_create(str(user["pk"]))
+                  print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına takip atıldı!{Style.RESET_ALL}")
+              except errors.ClientError as e:
+                  print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.RED}[-] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına takip atılamadı! ({e}){Style.RESET_ALL}")
+              except errors.ClientConnectionError as e:
+                  print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.RED}[-] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına takip atılamadı! Bağlantı hatası!({e}){Style.RESET_ALL}")
                     
                 print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.CYAN}[*] {Style.BRIGHT + Fore.WHITE}{sleep_sec} saniye bekleniyor!{Style.RESET_ALL}")
                 sleep(int(sleep_sec))
