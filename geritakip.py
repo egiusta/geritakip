@@ -136,10 +136,14 @@ def main():
 
         try:
             data = api.username_info(target_username)
-            data = api.user_followers(data["user"]["pk"], api.generate_uuid())
-            
-            tmp = data["users"]
-            print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{len(tmp)} adet kullanıcıya takip atılacak!{Style.RESET_ALL}")
+            giris = input("Kaç Kişiye Takip Atılsın")
+            n =0
+            deger = int(giris)
+            print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{deger} adet kullanıcıya takip atılacak!{Style.RESET_ALL}")
+
+            for n < deger:
+              n = n + 1
+              .....
 
             for user in data["users"]:
                 try:
