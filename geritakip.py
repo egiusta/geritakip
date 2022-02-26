@@ -142,7 +142,7 @@ def main():
             deger = int(giris)
             print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{deger} adet kullanıcıya takip atılacak!{Style.RESET_ALL}")
 
-            for n < :
+            for n 150 < :
               n = n + 1
               try:
                   tmp = user["username"]
