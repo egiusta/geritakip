@@ -12,7 +12,7 @@ def main():
     {Style.BRIGHT + Fore.RED}  ▄▄ ▄███▄{Style.RESET_ALL}
     {Style.BRIGHT + Fore.RED}▄▀▀▀▀ ▄▄▄ ▀▀▀▀▄   {Style.BRIGHT + Fore.MAGENTA}Instagram Kitleye Göre Takipçi Bulucu{Style.RESET_ALL}
     {Style.BRIGHT + Fore.RED}█    █   █    █   {Style.BRIGHT + Fore.RED}+-----------------------------------+{Style.RESET_ALL}
-    {Style.BRIGHT + Fore.RED}█    ▀▄▄▄▀    █             {Style.BRIGHT + Fore.YELLOW}Kodlayan eGi // Telegram: @b4f2f{Style.RESET_ALL}
+    {Style.BRIGHT + Fore.RED}█    ▀▄▄▄▀    █             {Style.BRIGHT + Fore.YELLOW}Coded by eGi // Telegram: @b4f2f{Style.RESET_ALL}
     {Style.BRIGHT + Fore.RED}▀▄▄▄▄▄▄▄▄▄▄▄▄▄▀{Style.RESET_ALL}
 
     """
@@ -75,7 +75,7 @@ def main():
     print("")
     print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}Giriş yapıldı!{Style.RESET_ALL}")
     
-    if ("KAYA" not in logo):
+    if ("eGi" not in logo):
         print("Bu programı eGi'den çaldım ve o kadar malım ki bunu da kaldırmayı unuttum.")
         exit(0)
 
