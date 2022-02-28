@@ -156,7 +156,7 @@ def main():
                 except errors.ClientConnectionError as e:
                     print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.RED}[-] {Style.BRIGHT + Fore.WHITE}{tmp} kullanıcısına takip atılamadı! Bağlantı hatası!({e}){Style.RESET_ALL}")
                     
-                print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.CYAN}[*] {Style.BRIGHT + Fore.WHITE}{sleep_sec} saniye bekleniyor!{Style.RESET_ALL}")
+                print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.YELLOW}[*] {Style.BRIGHT + Fore.YELLOW}{sleep_sec} saniye bekleniyor!{Style.RESET_ALL}")
                 sleep(int(sleep_sec))
                 continue
                     
